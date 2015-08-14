@@ -1,0 +1,23 @@
+{
+  "name": "jquery.sp-css",
+  "version": "0.1.0",
+  "homepage": "https://github.com/soloproyectos-js/jquery.sp-css",
+  "authors": [
+    "Gonzalo Chumillas <gchumillas@email.com>"
+  ],
+  "description": "A CSS helper plugin for jQuery.",
+  "main": "dist/jquery.sp-css.min.js",
+  "keywords": [
+    "jquery",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "vendor",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~2.0"
+  }
+}
