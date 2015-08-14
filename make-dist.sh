@@ -7,9 +7,9 @@ rm -rf dist/*
 
 # compresses JavaScript files
 cat \
-    src/jquery.sp-regex.js \
+    src/jquery.sp-css.js \
 | uglifyjs \
     --compress \
     --mangle \
-    --preamble "/*! jQuery.spRegex v0.1.0 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-regex/blob/master/LICENSE */" \
-    -o dist/jquery.sp-regex.min.js
+    --preamble "/*! jQuery.spCss v0.1.0 | Copyright (c) 2015 Gonzalo Chumillas | https://github.com/soloproyectos-js/jquery.sp-css/blob/master/LICENSE */" \
+    -o dist/jquery.sp-css.min.js
