@@ -20,6 +20,7 @@
          *
          * For example:
          * ```JavaScript
+         * var str = $.spCode('encode', 'Hi there, how are you?');
          * ```
          *
          * @param {string} text Text to be encoded
