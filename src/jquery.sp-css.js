@@ -29,6 +29,32 @@
          */
         'encode': function (text) {
             return text.replace( /(:|\.|\[|\]|,)/g, "\\$1" );
+        },
+        
+        /**
+         * Quotes a css parameter.
+         * 
+         * For example:
+         * ```JavaScript
+         * var str = 'Hello, "how" \'are\' you?';
+         * var div = $('div[title=' + $.spCss('quote', str, "'") + ']');
+         * ```
+         * 
+         * @param {string} text      Text to be encoded
+         * @param {string} quoteChar Quoted character (default is ")
+         * 
+         * @return {string}
+         */
+        'quote': function (text, quoteChar) {
+            if (quoteChar === undefined) {
+                quoteChar = '"';
+            }
+            
+            // replaces quoted characteres
+            var regExp = new RegExp(quoteChar, "g");
+            var str = $.spCss('encode', text).replace(regExp, "\\$&");
+            
+            return quoteChar + str + quoteChar;
         }
     };
     
